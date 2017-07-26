@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+@{
+    ViewBag.Title = "Login Screen";
+}
+
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+
+
+<html>
+<body>
+    <form name="Log" onsubmit="return validateForm()" action="Index" method="post">
+        Email address:<br>
+        <input type="text" name="Email">
+        <br><br>
+        Password:<br>
+        <input type="text" name="password">
+        <br><br>
+        <input type="submit" value="Home">
+        <br>
+    </form>
+
+    @*<p>If you click the "Login" button after entering valid inputs, you will be permitted into our site".</p>*@
+
+</body>
+</html>
+
